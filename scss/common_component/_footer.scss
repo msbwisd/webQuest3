@@ -1,0 +1,33 @@
+// footer 공통 스타일
+
+@mixin footer_basic {
+    width: 100%; margin-top: 20px;
+    background-color: #1a1f32;
+    &_inner_box{
+        // background-color: lightblue;
+        width: 1000px; height: 250px;
+        margin: 0 auto; 
+        color: rgb(139, 140, 140);
+        h1, ul, li { display: inline-block; }
+        > h1 {
+            position: absolute; 
+            left: 10px; bottom: 150px;
+            margin: 0; 
+        }
+        .footer_menu_bar {
+            position: absolute; 
+            right: 20px; bottom: 150px;
+            padding: 0 10px;
+            >li{
+                padding: 0 20px;
+                &:hover{ cursor: pointer; }                    
+            }
+        }
+        .footer_info{
+            position: absolute; 
+            left: 10px; bottom: 10px;
+            margin: 0;
+            line-height: 25px;
+        }
+    }    
+}

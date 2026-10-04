@@ -1,0 +1,6 @@
+// 리스트 기본 스타일 제거
+@mixin list_basic { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

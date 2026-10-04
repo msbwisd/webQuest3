@@ -1,0 +1,50 @@
+// header 공통 스타일
+
+@mixin header_basic {
+    width: 100%; 
+    text-align: center;
+    // background-color: pink;               //임시
+    &_inner_box {
+        width: 1180px; height: 120px;
+        margin: 0 auto;
+        // background-color: orange;         // 임시
+        ul, li, .logo_text{ display: inline-block; }
+        .utilty_bar {
+            position: absolute;
+            right: 30px; top: 20px;
+            > li { 
+                padding: 0 10px; 
+                a { 
+                    font-size: 12px;                
+                    text-decoration: none; 
+                    color: black;
+                    &:hover {
+                        cursor: pointer;
+                        color: red;
+                    }
+                }
+            }   
+        }
+        .logo_text{
+            position: absolute;
+            left: 10px; bottom: 15px;
+            margin: 0;
+        }
+        .global_navigation_bar {
+            position: absolute;
+            right: 0; bottom: 15px;
+            > li { 
+                padding: 0 40px; color: black;
+                a { 
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: inherit;
+                    &:hover {
+                        cursor: pointer;
+                        color: red;
+                    }
+                  } 
+            }
+        }
+    }   
+}
