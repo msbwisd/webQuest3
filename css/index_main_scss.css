@@ -1,0 +1,151 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pst_rel {
+  position: relative;
+}
+
+.absolute_at_center {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Verdana;
+  font-size: 16px;
+  margin: 0;
+}
+body .header {
+  width: 100%;
+  text-align: center;
+}
+body .header_inner_box {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+}
+body .header_inner_box ul, body .header_inner_box li, body .header_inner_box .logo_text {
+  display: inline-block;
+}
+body .header_inner_box .utilty_bar {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+body .header_inner_box .utilty_bar > li {
+  padding: 0 10px;
+}
+body .header_inner_box .utilty_bar > li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+body .header_inner_box .utilty_bar > li a:hover {
+  cursor: pointer;
+  color: red;
+}
+body .header_inner_box .logo_text {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  margin: 0;
+}
+body .header_inner_box .global_navigation_bar {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+body .header_inner_box .global_navigation_bar > li {
+  padding: 0 40px;
+}
+body .header_inner_box .global_navigation_bar > li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+body .header_inner_box .global_navigation_bar > li a:hover {
+  cursor: pointer;
+  color: red;
+}
+body .main_image {
+  width: 100%;
+  height: 590px;
+  background-image: url("../image/leo.png");
+  background-size: 100% 100%;
+}
+body .main_image_inner_box {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  top: 150px;
+}
+body .main_image_inner_box .main_image_text_title {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+}
+body .main_image_inner_box .main_image_text {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+}
+body .section {
+  width: 1180px;
+  height: 450px;
+  margin: 0 auto;
+}
+body .section_title {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 50px 0;
+}
+body .section .article1 {
+  float: left;
+  width: 230px;
+  margin-right: 86.6666666667px;
+}
+body .section .article1_image {
+  width: 230px;
+  height: 163px;
+  background-image: url("https://www.tekedia.com/wp-content/uploads/2020/12/xmas.jpg");
+  background-size: cover;
+}
+body .section .article2 {
+  float: left;
+  width: 230px;
+  margin-right: 86.6666666667px;
+}
+body .section .article2_image {
+  width: 230px;
+  height: 163px;
+  background-image: url("https://t3.ftcdn.net/jpg/10/44/79/04/360_F_1044790417_lsNTemROc2jLyGd1emAjFUh6Waefmxn7.jpg");
+  background-size: cover;
+}
+body .section .article3 {
+  float: left;
+  width: 230px;
+  margin-right: 86.6666666667px;
+}
+body .section .article3_image {
+  width: 230px;
+  height: 163px;
+  background-image: url("https://i5.walmartimages.com/asr/e7973ab0-2263-47b2-9d78-7aef07755065.4f4314770eac779c5c3cda3ec6f34761.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF");
+  background-size: cover;
+}
+body .section .article4 {
+  float: left;
+  width: 230px;
+}
+body .section .article4_image {
+  width: 230px;
+  height: 163px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0570/3132/7926/files/5C4A_9948.jpg?v=1781793163");
+  background-size: cover;
+}/*# sourceMappingURL=index_main_scss.css.map */
