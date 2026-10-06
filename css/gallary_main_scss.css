@@ -1,0 +1,137 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pst_rel {
+  position: relative;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana;
+  font-size: 16px;
+  margin: 0;
+}
+body .header {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+body .header_inner_box {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+}
+body .header_inner_box ul, body .header_inner_box li, body .header_inner_box .logo_text {
+  display: inline-block;
+}
+body .header_inner_box .utilty_bar {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+body .header_inner_box .utilty_bar > li {
+  padding: 0 10px;
+}
+body .header_inner_box .utilty_bar > li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+body .header_inner_box .utilty_bar > li a:hover {
+  cursor: pointer;
+  color: red;
+}
+body .header_inner_box .logo_text {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  margin: 0;
+}
+body .header_inner_box .global_navigation_bar {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+body .header_inner_box .global_navigation_bar > li {
+  padding: 0 40px;
+  color: black;
+  font-weight: bold;
+}
+body .header_inner_box a {
+  text-decoration: none;
+  color: inherit;
+}
+body .header_inner_box a:hover {
+  cursor: pointer;
+  color: red;
+}
+body .header {
+  position: fixed;
+  top: 0;
+  border-bottom: 1.5px solid black;
+  z-index: 2;
+}
+body .section {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 121.5px;
+  overflow: hidden;
+  background-color: pink;
+}
+body .section article {
+  float: left;
+  margin: 5px;
+}
+body .section img {
+  display: block;
+}
+body .section p {
+  position: absolute;
+}
+body .section {
+  color: white;
+  font-weight: bold;
+}
+body .section .article1 {
+  margin-top: 0;
+  margin-left: 0;
+}
+body .section .article1 p {
+  right: 10px;
+  bottom: 10px;
+  font-size: 30px;
+}
+body .section .article2 {
+  margin-top: 0;
+  margin-right: 0;
+}
+body .section .article2 p {
+  top: 50px;
+  left: 10px;
+}
+body .section .article3-1, body .section .article3-2 {
+  margin-right: 0;
+}
+body .section .article3-1 p {
+  right: 10px;
+  bottom: 20px;
+}
+body .section .article4 {
+  width: 490px;
+  height: 490px;
+  float: left;
+  margin-right: 5px;
+}
+body .section .article4 .article4-1, body .section .article4 .article4-2 {
+  margin-left: 0;
+}
+body .section .article5 {
+  margin-right: 0;
+}/*# sourceMappingURL=gallary_main_scss.css.map */

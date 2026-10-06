@@ -1,4 +1,5 @@
-@forward '../scss/common_component/common_styles';  // 공통 스타일
-@forward '../scss/index/constant/index_variable';   //index 페이지 변수
-@forward '../scss/common_component/header';         // 헤더
-@forward '../scss/common_component/footer';         // 푸터
+@forward '../scss/component/header';
+@forward '../scss/component/footer';                   
+@forward '../scss/constants/images';
+@forward '../scss/constants/text';
+@forward '../scss/common_styles';

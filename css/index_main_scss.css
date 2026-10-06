@@ -22,6 +22,7 @@ body {
 body .header {
   width: 100%;
   text-align: center;
+  background-color: white;
 }
 body .header_inner_box {
   width: 1180px;
@@ -62,13 +63,13 @@ body .header_inner_box .global_navigation_bar {
 body .header_inner_box .global_navigation_bar > li {
   padding: 0 40px;
   color: black;
-}
-body .header_inner_box .global_navigation_bar > li a {
-  text-decoration: none;
   font-weight: bold;
+}
+body .header_inner_box a {
+  text-decoration: none;
   color: inherit;
 }
-body .header_inner_box .global_navigation_bar > li a:hover {
+body .header_inner_box a:hover {
   cursor: pointer;
   color: red;
 }
@@ -115,8 +116,6 @@ body .section .article1 {
 body .section .article1_image {
   width: 230px;
   height: 163px;
-  background-image: url("https://www.tekedia.com/wp-content/uploads/2020/12/xmas.jpg");
-  background-size: cover;
 }
 body .section .article1 > h4 {
   margin: 10px 0;
@@ -129,8 +128,6 @@ body .section .article2 {
 body .section .article2_image {
   width: 230px;
   height: 163px;
-  background-image: url("https://t3.ftcdn.net/jpg/10/44/79/04/360_F_1044790417_lsNTemROc2jLyGd1emAjFUh6Waefmxn7.jpg");
-  background-size: cover;
 }
 body .section .article2 > h4 {
   margin: 10px 0;
@@ -143,8 +140,6 @@ body .section .article3 {
 body .section .article3_image {
   width: 230px;
   height: 163px;
-  background-image: url("https://i5.walmartimages.com/asr/e7973ab0-2263-47b2-9d78-7aef07755065.4f4314770eac779c5c3cda3ec6f34761.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF");
-  background-size: cover;
 }
 body .section .article3 > h4 {
   margin: 10px 0;
@@ -156,8 +151,6 @@ body .section .article4 {
 body .section .article4_image {
   width: 230px;
   height: 163px;
-  background-image: url("https://cdn.shopify.com/s/files/1/0570/3132/7926/files/5C4A_9948.jpg?v=1781793163");
-  background-size: cover;
 }
 body .section .article4 > h4 {
   margin: 10px 0;

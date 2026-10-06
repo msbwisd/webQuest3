@@ -1,0 +1,51 @@
+@use '../../lib/index' as lib;
+
+
+// ul 기본 스타일 제거
+ul { @include lib.list_basic; }
+
+// 비정적 요소 기준으로써 사용할때 사용
+.pst_rel { position: relative; }   
+
+p {margin: 0; padding: 0;}
+
+body {
+    font-family: lib.$main_font_style;
+    font-size: lib.$main_font_size;
+    margin: 0;
+    .header { 
+        @include lib.header_basic;
+        position: fixed; top: 0;
+        border-bottom: 1.5px solid black;
+        z-index: 2;
+    }
+    .section {
+        width: 1000px;
+        margin: 0 auto; margin-top: 121.5px;
+        overflow: hidden;
+        background-color: pink;   //임시
+        
+        article { float: left; margin: 5px; }
+        img       { display: block; }
+        p         { position: absolute; }
+
+        color: white;
+        font-weight: bold;
+        .article1 { 
+            margin-top: 0; margin-left: 0; 
+            p { right: 10px; bottom: 10px; font-size: 30px; }
+        }
+        .article2 { 
+            margin-top: 0; margin-right: 0; 
+            p { top: 50px; left: 10px; }
+        }
+        .article3-1, .article3-2 { margin-right: 0; }
+        .article3-1 p { right: 10px; bottom: 20px;}
+        .article4 {
+            width: 490px; height: 490px;
+            float: left;  margin-right: 5px;
+            .article4-1, .article4-2 { margin-left: 0; }
+        }
+        .article5 { margin-right: 0; }
+    }
+}

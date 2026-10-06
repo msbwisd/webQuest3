@@ -3,6 +3,7 @@
 @mixin header_basic {
     width: 100%; 
     text-align: center;
+    background-color: white;
     // background-color: pink;               //임시
     &_inner_box {
         width: 1180px; height: 120px;
@@ -35,16 +36,16 @@
             right: 0; bottom: 15px;
             > li { 
                 padding: 0 40px; color: black;
-                a { 
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: inherit;
-                    &:hover {
-                        cursor: pointer;
-                        color: red;
-                    }
-                  } 
+                font-weight: bold;
             }
         }
+        a { 
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+                cursor: pointer;
+                color: red;
+            }
+        } 
     }   
 }
