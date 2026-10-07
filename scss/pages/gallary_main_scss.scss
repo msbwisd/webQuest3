@@ -9,6 +9,15 @@ ul { @include lib.list_basic; }
 
 p {margin: 0; padding: 0;}
 
+// absolute 요소 수평 가운데 정렬 
+.absolute_at_horizon_center{
+    left: 0; right: 0; margin: 0 auto;
+}
+
+// absolute 요소 수직수평 가운데 정렬 
+.absolute_at_center{
+    top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+}
 body {
     font-family: lib.$main_font_style;
     font-size: lib.$main_font_size;
@@ -23,11 +32,11 @@ body {
         width: 1000px;
         margin: 0 auto; margin-top: 121.5px;
         overflow: hidden;
-        background-color: pink;   //임시
+        // background-color: pink;   //임시
         
         article { float: left; margin: 5px; }
-        img       { display: block; }
-        p         { position: absolute; }
+        img     { display: block; }
+        p       { position: absolute; padding: 0;}
 
         color: white;
         font-weight: bold;
@@ -37,15 +46,42 @@ body {
         }
         .article2 { 
             margin-top: 0; margin-right: 0; 
-            p { top: 50px; left: 10px; }
+            p { top: 50px; left: 10px; font-size: 25px;}
         }
         .article3-1, .article3-2 { margin-right: 0; }
         .article3-1 p { right: 10px; bottom: 20px;}
         .article4 {
-            width: 490px; height: 490px;
-            float: left;  margin-right: 5px;
-            .article4-1, .article4-2 { margin-left: 0; }
+            width: 490px; height: 490px; 
+            float: left; overflow: hidden;
+            margin: 5px 5px 5px 0 ;
+            .article4-1, .article4-2 { margin: 0 0 10px 0; }
+            .article4-1 p { 
+                width: 300px; 
+                color: black;
+                top: 160px; }
+            .article4-2 p {
+                right: 20px; bottom: 30px;
+                font-size: 30px; color: gold;
+            }
         }
         .article5 { margin-right: 0; }
+        .article6 { 
+            margin: 5px 0 5px 0;
+            p { 
+                width: 1000px; height: 70px; 
+                font-size: 50px; text-align: center;
+                text-shadow: 2px 2px 2px #000;
+                }
+        }
+        .article7 { 
+            margin: 5px 0 0 0; 
+            p {
+                width: 450px; height: 150px;
+                right: 30px; bottom: 40px;
+                font-size: 20px; font-weight: normal;
+                >span { font-size: 30px; font-weight: bold;}
+            }
+        }
+
     }
 }

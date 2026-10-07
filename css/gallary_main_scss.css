@@ -13,6 +13,20 @@ p {
   padding: 0;
 }
 
+.absolute_at_horizon_center {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.absolute_at_center {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 body {
   font-family: Verdana;
   font-size: 16px;
@@ -83,7 +97,6 @@ body .section {
   margin: 0 auto;
   margin-top: 121.5px;
   overflow: hidden;
-  background-color: pink;
 }
 body .section article {
   float: left;
@@ -94,6 +107,7 @@ body .section img {
 }
 body .section p {
   position: absolute;
+  padding: 0;
 }
 body .section {
   color: white;
@@ -115,6 +129,7 @@ body .section .article2 {
 body .section .article2 p {
   top: 50px;
   left: 10px;
+  font-size: 25px;
 }
 body .section .article3-1, body .section .article3-2 {
   margin-right: 0;
@@ -127,11 +142,48 @@ body .section .article4 {
   width: 490px;
   height: 490px;
   float: left;
-  margin-right: 5px;
+  overflow: hidden;
+  margin: 5px 5px 5px 0;
 }
 body .section .article4 .article4-1, body .section .article4 .article4-2 {
-  margin-left: 0;
+  margin: 0 0 10px 0;
+}
+body .section .article4 .article4-1 p {
+  width: 300px;
+  color: black;
+  top: 160px;
+}
+body .section .article4 .article4-2 p {
+  right: 20px;
+  bottom: 30px;
+  font-size: 30px;
+  color: gold;
 }
 body .section .article5 {
   margin-right: 0;
+}
+body .section .article6 {
+  margin: 5px 0 5px 0;
+}
+body .section .article6 p {
+  width: 1000px;
+  height: 70px;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+body .section .article7 {
+  margin: 5px 0 0 0;
+}
+body .section .article7 p {
+  width: 450px;
+  height: 150px;
+  right: 30px;
+  bottom: 40px;
+  font-size: 20px;
+  font-weight: normal;
+}
+body .section .article7 p > span {
+  font-size: 30px;
+  font-weight: bold;
 }/*# sourceMappingURL=gallary_main_scss.css.map */
